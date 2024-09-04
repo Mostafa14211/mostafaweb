@@ -20,4 +20,14 @@
   border: 2px solid black;
   display:inline;
   cursor: pointer;
+  transition:0.4s;
+}
+
+.btn:hover{
+  height:60px;
+  width:90px;
+  text-align:center;
+  border: 2px solid black;
+  display:inline;
+  cursor: pointer;
 }
