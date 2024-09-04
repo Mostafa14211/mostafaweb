@@ -5,6 +5,7 @@ let role;
 
 if(localStorage.role != null){
   role = JSON.parse(localstorage.role);
+  container.innerHTML = role;
 } else{
   role = '';
 };
