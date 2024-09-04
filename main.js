@@ -1,8 +1,17 @@
+localStorage.clear();
+
 let container = document.getElementById('container');
+let role;
+
+if(localStorage.role != null){
+  role = JSON.parse(localstorage.role);
+} else{
+  role = '';
+};
 
 function setRole(roleId){
-  let roleText = document.createTextNode(roleId);
-  localStorage.setItem('role',roleText);
-  container.appendChild(roleText);
-  
+  localStorage.setItem('role',JSON.stringify(roleId));
+  container.innerHTML = JSON.stringify(roleId);
+  role = roleId;
+
 }
