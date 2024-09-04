@@ -12,7 +12,7 @@ if(localStorage.role != null){
 function setRole(roleId){
   role = roleId;
   localStorage.setItem('role',JSON.stringify(role));
-  container.innerHTML = JSON.stringify(role);
+  container.innerHTML = role;
   
 
 }
