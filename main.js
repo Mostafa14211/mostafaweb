@@ -1,5 +1,3 @@
-localStorage.clear()
-
 let container = document.getElementById('container');
 let role;
 
