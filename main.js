@@ -2,7 +2,7 @@ let container = document.getElementById('container');
 let role;
 
 if(localStorage.role != null){
-  role = JSON.parse(localstorage.role);
+  role = localstorage.role;
   container.innerHTML = role;
 } else{
   role = '';
@@ -10,7 +10,7 @@ if(localStorage.role != null){
 
 function setRole(roleId){
   role = roleId;
-  localStorage.setItem('role',JSON.stringify(role));
+  localStorage.setItem('role',role);
   container.innerHTML = role;
   
 
