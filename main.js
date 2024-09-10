@@ -1,8 +1,10 @@
+localStorage.clear()
+
 let container = document.getElementById('container');
 let role;
 
 if(localStorage.role != null){
-  role = localstorage.role;
+  role = localStorage.role;
   container.innerHTML = role;
 } else{
   role = '';
